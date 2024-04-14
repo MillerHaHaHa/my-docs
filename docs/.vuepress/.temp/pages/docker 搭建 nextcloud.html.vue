@@ -1,0 +1,27 @@
+<template><div><h1 id="docker-搭建-nextcloud" tabindex="-1"><a class="header-anchor" href="#docker-搭建-nextcloud"><span>docker 搭建 nextcloud</span></a></h1>
+<p>官网配置文件</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>https://github.com/nextcloud/docker
+记得将 volume 的路径前面都要加 ./
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>拷贝配置文件出来</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>docker cp nextcloud_app_1:/var/www/html/config/config.php var/www/html/config/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>拷贝配置文件到容器</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>docker cp var/www/html/config/config.php nextcloud_app_1:/var/www/html/config
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>设置权限</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>docker-compose exec app chown -R www-data:www-data /var/www/html/config
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重启容器</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>docker-compose restart
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>进入容器终端</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>docker exec -u 33 -it 56ee69cfd89b /bin/bash
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>使用 occ</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>php occ
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>执行 cron.php</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>docker exec -u www-data nextcloud_app_1 php cron.php
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>添加到定时任务</p>
+<div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code>crontab -e
+*/5 * * * * docker exec -u www-data nextcloud_app_1 php cron.php
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>参考链接</p>
+<p>https://github.com/nextcloud/docker</p>
+<p>https://www.bilibili.com/read/cv25645178/</p>
+</div></template>
+
+
