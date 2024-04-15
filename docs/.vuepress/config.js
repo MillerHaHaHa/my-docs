@@ -12,7 +12,30 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
 
-    navbar: ['/', '/get-started', '/docker 搭建 nextcloud'],
+    navbar: [
+      {
+        text: '学习',
+        children: [
+          {
+            text: 'Nas',
+            children: [
+              '/learn/nas/HowToInstallNextcloudWithDocker.md',
+            ],
+          },
+        ],
+      },
+      {
+        text: '工作',
+        children: [
+          {
+            text: 'Goke',
+            children: [
+              '/work/goke/HowToUseUSBNetwork.md',
+            ],
+          },
+        ],
+      },
+    ],
   }),
 
   bundler: viteBundler(),
