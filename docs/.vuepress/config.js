@@ -25,7 +25,10 @@ export default defineUserConfig({
           {
             text: 'Linux',
             children: [
+              '/learn/linux/gperf使用.md',
+              '/learn/linux/nfs安装和使用.md',
               '/learn/linux/nginx安装和使用.md',
+              '/learn/linux/tc流控.md',
               '/learn/linux/ufw使用.md',
             ],
           },
@@ -46,6 +49,8 @@ export default defineUserConfig({
             children: [
               '/work/goke/配置USB网卡.md',
               '/work/goke/配置USB虚拟U盘.md',
+              '/work/goke/设置登录密码.md',
+              '/work/goke/fw_printfenv使用.md',
               '/work/goke/IPC名词.md',
             ],
           },
