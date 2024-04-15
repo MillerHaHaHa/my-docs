@@ -17,9 +17,23 @@ export default defineUserConfig({
         text: '学习',
         children: [
           {
+            text: 'Common',
+            children: [
+              '/learn/common/windows激活.md',
+            ],
+          },
+          {
+            text: 'Linux',
+            children: [
+              '/learn/linux/nginx安装和使用.md',
+              '/learn/linux/ufw使用.md',
+            ],
+          },
+          {
             text: 'Nas',
             children: [
-              '/learn/nas/HowToInstallNextcloudWithDocker.md',
+              '/learn/nas/docker搭建nextcloud.md',
+              '/learn/nas/qbittorrent使用.md',
             ],
           },
         ],
@@ -30,7 +44,9 @@ export default defineUserConfig({
           {
             text: 'Goke',
             children: [
-              '/work/goke/HowToUseUSBNetwork.md',
+              '/work/goke/配置USB网卡.md',
+              '/work/goke/配置USB虚拟U盘.md',
+              '/work/goke/IPC名词.md',
             ],
           },
         ],
