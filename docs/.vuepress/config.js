@@ -10,7 +10,7 @@ export default defineUserConfig({
   description: 'My first VuePress Site',
 
   theme: defaultTheme({
-    logo: 'https://images-1306478114.cos.ap-guangzhou.myqcloud.com/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9B%BE%E6%A0%87.png',
+    logo: 'https://images-1306478114.cos.ap-guangzhou.myqcloud.com/%E4%B9%A6%E6%9E%B6%E9%80%89%E4%B8%AD.svg',
     navbar: [
       {
         text: '学习',
