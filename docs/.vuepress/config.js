@@ -6,8 +6,8 @@ export default defineUserConfig({
   base: '/my-docs/',
   lang: 'zh-CN',
 
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: 'Miller の 文档库',
+  description: '记录各种折腾笔记',
 
   theme: defaultTheme({
     logo: 'https://images-1306478114.cos.ap-guangzhou.myqcloud.com/%E4%B9%A6%E6%9E%B6%E9%80%89%E4%B8%AD.svg',
