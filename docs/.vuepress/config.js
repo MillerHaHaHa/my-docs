@@ -24,6 +24,7 @@ export default defineUserConfig({
           {
             text: 'Linux',
             children: [
+              '/learn/linux/开发常用环境变量配置.md',
               '/learn/linux/gperf使用.md',
               '/learn/linux/nfs安装和使用.md',
               '/learn/linux/nginx安装和使用.md',
