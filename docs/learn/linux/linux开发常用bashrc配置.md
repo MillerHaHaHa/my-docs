@@ -1,3 +1,5 @@
+# linux开发常用bashrc配置
+
 ```
 alias ll='ls -alF'
 alias la='ls -A'
