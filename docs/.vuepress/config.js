@@ -53,6 +53,8 @@ export default defineUserConfig({
               '/work/goke/fw_printfenv使用.md',
               '/work/goke/IPC名词.md',
 	      '/work/goke/coredump调试.md',
+              '/work/goke/UART1的使用.md',
+	      '/work/goke/lvgl调试.md',
             ],
           },
         ],
