@@ -52,6 +52,7 @@ export default defineUserConfig({
               '/work/goke/设置登录密码.md',
               '/work/goke/fw_printfenv使用.md',
               '/work/goke/IPC名词.md',
+	      '/work/goke/coredump调试.md',
             ],
           },
         ],
