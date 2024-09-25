@@ -37,6 +37,7 @@ export default defineUserConfig({
             children: [
               '/learn/nas/docker搭建nextcloud.md',
               '/learn/nas/qbittorrent使用.md',
+	      '/learn/nas/ssh多次登录失败加入黑名单.md',
             ],
           },
         ],
