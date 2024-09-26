@@ -56,6 +56,7 @@ export default defineUserConfig({
 	      '/work/goke/coredump调试.md',
               '/work/goke/UART1的使用.md',
 	      '/work/goke/lvgl调试.md',
+	      '/work/goke/快速修改内核配置.md',
             ],
           },
         ],
