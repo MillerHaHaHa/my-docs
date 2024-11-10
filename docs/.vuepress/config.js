@@ -28,6 +28,7 @@ export default defineUserConfig({
               '/learn/linux/gperf使用.md',
               '/learn/linux/nfs安装和使用.md',
               '/learn/linux/nginx安装和使用.md',
+			  '/learn/linux/nodejs安装和使用.md',
               '/learn/linux/tc流控.md',
               '/learn/linux/ufw使用.md',
             ],
@@ -36,8 +37,9 @@ export default defineUserConfig({
             text: 'Nas',
             children: [
               '/learn/nas/docker搭建nextcloud.md',
+			  '/learn/nas/nextcloud安装和使用.md',
               '/learn/nas/qbittorrent使用.md',
-	      '/learn/nas/ssh多次登录失败加入黑名单.md',
+	      	  '/learn/nas/ssh多次登录失败加入黑名单.md',
             ],
           },
         ],
