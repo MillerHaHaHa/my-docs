@@ -1,0 +1,16 @@
+import{_ as e,o as a,c as l,e as i}from"./app-CmOngkEL.js";const n={},s=i(`<h1 id="linux-开发常用-bashrc-配置" tabindex="-1"><a class="header-anchor" href="#linux-开发常用-bashrc-配置"><span>linux 开发常用 bashrc 配置</span></a></h1><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>alias ll=&#39;ls -alF&#39;
+alias la=&#39;ls -A&#39;
+alias l=&#39;ls -CF&#39;
+alias r=&#39;pushd .. &gt; /dev/null&#39;
+alias rr=&#39;pushd .. &gt; /dev/null;pushd .. &gt; /dev/null&#39;
+alias e=&#39;popd &gt; /dev/null&#39;
+alias ee=&#39;popd &gt; /dev/null;popd &gt; /dev/null&#39;
+alias g=&#39;grep -rn&#39;
+alias go=&#39;grep -rnw&#39;
+alias vi=&#39;vim&#39;
+alias so=&#39;source build/env.sh&#39;
+alias cm=&#39;make clean;make all&#39;
+alias cmb=&#39;make clean;make build&#39;
+alias mm=&#39;make menuconfig&#39;
+alias f=&#39;find . -iname&#39;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),d=[s];function r(c,t){return a(),l("div",null,d)}const u=e(n,[["render",r],["__file","linux开发常用bashrc配置.html.vue"]]),v=JSON.parse('{"path":"/learn/linux/linux%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8bashrc%E9%85%8D%E7%BD%AE.html","title":"linux 开发常用 bashrc 配置","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1715182808000,"contributors":[{"name":"huangmingle","email":"huangmingle@goke.com","commits":2},{"name":"miller","email":"lelee123a@163.com","commits":1}]},"filePathRelative":"learn/linux/linux开发常用bashrc配置.md"}');export{u as comp,v as data};
