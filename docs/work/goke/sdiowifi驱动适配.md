@@ -376,3 +376,46 @@ round-trip min/avg/max = 41.493/67.805/93.313 ms
 ```
 
 至此AP启动成功。
+
+## 1.10 sta 模式和 udhcpc
+
+### 1.10.1 准备 udhcpc 配置
+
+拷贝 `sdk/out/xm72020330/rootfs_builddir/busybox-1_26_2/examples/udhcp/simple.script` 到板端 udhcpc 的默认配置路径 `/usr/share/udhcpc/default.script`
+
+### 1.10.2 编译 wpa_supplicant
+
+https://blog.csdn.net/Turix/article/details/112910483
+
+### 1.10.3 准备 wpa_supplicant 配置文件
+
+```
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+
+network={
+	ssid="wifi-ssid"
+	psk="wifi-psk"
+	key_mgmt=WPA-PSK
+}
+```
+
+### 1.10.4 运行
+
+连接 Wi-Fi
+
+```
+wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+```
+
+自动获取 IP
+
+```
+udhcpc -i wlan0 &
+```
+
+查询 Wi-Fi 状态
+
+```
+wpa_cli -i wlan0 status
+```
